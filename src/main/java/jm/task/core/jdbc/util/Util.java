@@ -10,8 +10,10 @@ public class Util {
     private static final String DB_USERNAME = "root";
     private static final String DB_PASSWORD = "root";
 
+    public static Connection connection;
+
     public static Connection getConnection() {
-        Connection connection = null;
+//        Connection connection = null;
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             connection = DriverManager.getConnection(DB_URL, DB_USERNAME, DB_PASSWORD);
@@ -23,4 +25,6 @@ public class Util {
         }
         return connection;
     }
-}
+
+    }
+
