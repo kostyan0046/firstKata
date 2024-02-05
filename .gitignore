@@ -10,4 +10,4 @@
 .target/
 .mvn/wrapper
 .idea/
-/target/
+./target
